@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
 </head>
 <body>
-    
+
+    <script id="recipes-template"  type = "text/x-handlebars-template">
+
+        {{#each recipes}}
+            <div class="recipe-div">
+                <div>
+                    <a class="ingredient-title" href="{{href}}">{{title}}</a>
+                </div>
+                <img src="{{thumbnail}}" class="ingredient-img">
+                <div class="list-div">
+                    <span class="ingredients-title">Ingredients</span>
+                    <ul class="ingredients-list" >
+                        {{#each ingredients}}
+                            <li class="ingredients-li" >{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        {{/each}}
+        
+    </script>
+
+
+    <div id="black-box"></div>
+
+    <div id="container">
+    <div >
+        <input type="text" placeholder="Enter an ingredient"> <button type="button" id="search-button">Search!</button>
+    </div>
+    <div id="recipes-container"></div>
+</div>
 </body>
+<script src="./jquery/dist/jquery.js"></script>
+<script src="./handlebars/dist/handlebars.js"></script>
+<script src="Renderer.js"></script>
+<script src="main.js"></script>
 </html>
