@@ -2,7 +2,7 @@ const express = require(`express`)
 const path = require(`path`)
 const api = require(`./server/routers/api`)
 const app = express()
-const port = 8000
+const port = 8080
 
 
 app.use(express.json())
