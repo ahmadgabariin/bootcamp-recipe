@@ -67,3 +67,8 @@ button {
     justify-content: center;
     align-content: center;
 }
+
+
+ul {
+    column-count: 3;
+}
