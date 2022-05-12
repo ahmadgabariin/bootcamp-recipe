@@ -12,11 +12,14 @@
     <script id="recipes-template"  type = "text/x-handlebars-template">
 
         {{#each recipes}}
+        <div class="parent-recipe-div">
             <div class="recipe-div">
                 <div>
                     <a class="ingredient-title" href="{{href}}">{{title}}</a>
                 </div>
-                <img src="{{thumbnail}}" class="ingredient-img">
+                <div class="image-div">
+                    <img src="{{thumbnail}}" class="ingredient-img">
+                </div>
                 <div class="list-div">
                     <span class="ingredients-title">Ingredients</span>
                     <ul class="ingredients-list" >
@@ -26,6 +29,7 @@
                     </ul>
                 </div>
             </div>
+        </div>
         {{/each}}
         
     </script>

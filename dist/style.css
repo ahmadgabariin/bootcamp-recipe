@@ -19,6 +19,7 @@ body {
     row-gap: 4vh;
     column-gap: 4vw;
     margin-right: 2vw;
+    margin-top: 20px;
 
 }
 
@@ -47,10 +48,22 @@ button {
     
 }
 
-.recipe-div{
+.parent-recipe-div {
     background-color: #FFDA79 ;
+    border-radius: 10px;
+    box-shadow: 2px 3px;
+}
+.recipe-div{
+    margin: 1vw;
     display: grid;
     align-content: center;
     width: 100%;
     row-gap: 2vh ;
+    
+}
+
+.image-div {
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
